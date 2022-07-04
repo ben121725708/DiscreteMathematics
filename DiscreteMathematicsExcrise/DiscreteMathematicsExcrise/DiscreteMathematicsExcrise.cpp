@@ -9,7 +9,7 @@ int main()
 {
 	auto *cp1 = new  DiscreteChapter1();
 	if (cp1) {
-		cp1->foreverTrueOrFalse();
+		cp1->logicalEquivalence();
 	}
 
 }

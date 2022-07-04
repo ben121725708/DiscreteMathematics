@@ -12,7 +12,9 @@ public:
 	void threeBoxQuestion(bool p1,bool p2);
 	//永真式和矛盾式
 	void foreverTrueOrFalse();
+	//逻辑等价式
+	void logicalEquivalence();
 private:
-
+	inline bool conditionResult(bool p1, bool p2);
 };
 
