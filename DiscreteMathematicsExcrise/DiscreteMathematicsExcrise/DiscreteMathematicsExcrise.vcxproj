@@ -151,14 +151,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ArrayUtils.cpp" />
     <ClCompile Include="CommomUtils.cpp" />
     <ClCompile Include="DiscreteChapter1.cpp" />
+    <ClCompile Include="DiscreteChapter2.cpp" />
     <ClCompile Include="DiscreteChapter3.cpp" />
     <ClCompile Include="DiscreteMathematicsExcrise.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ArrayUtils.h" />
     <ClInclude Include="CommomUtils.h" />
     <ClInclude Include="DiscreteChapter1.h" />
+    <ClInclude Include="DiscreteChapter2.h" />
     <ClInclude Include="DiscreteChapter3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

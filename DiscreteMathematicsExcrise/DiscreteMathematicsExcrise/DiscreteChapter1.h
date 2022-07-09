@@ -6,14 +6,14 @@
 class DiscreteChapter1
 {
 public:
-	//否定逻辑运算符
-	void notSymbol();
 	//三个宝箱逻辑问题  判断宝物在哪个宝箱
 	void threeBoxQuestion(bool p1,bool p2);
 	//永真式和矛盾式
 	void foreverTrueOrFalse();
 	//逻辑等价式
 	void logicalEquivalence();
+	//推理规则
+	void inferenceRules();
 private:
 	inline bool conditionResult(bool p1, bool p2);
 };

@@ -27,6 +27,12 @@
     <ClCompile Include="CommomUtils.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DiscreteChapter2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayUtils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DiscreteChapter1.h">
@@ -36,6 +42,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="CommomUtils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscreteChapter2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ArrayUtils.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -2,14 +2,19 @@
 //
 
 #include <iostream>
-#include "DiscreteChapter1.h"
+#include <string>
+#include "CommomUtils.h"
+#include "ArrayUtils.h"
+#include "DiscreteChapter2.h"
+
 using namespace std;
 
-int main()
-{
-	auto *cp1 = new  DiscreteChapter1();
-	if (cp1) {
-		cp1->logicalEquivalence();
-	}
 
-}
+int main(){
+	DiscreteChapter2 cp;
+
+	int a[10] = {1,3,5};
+	int b[10] = {};
+
+
+} 
