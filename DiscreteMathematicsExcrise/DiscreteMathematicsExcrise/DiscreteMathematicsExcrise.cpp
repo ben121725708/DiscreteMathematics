@@ -5,16 +5,16 @@
 #include <string>
 #include "CommomUtils.h"
 #include "ArrayUtils.h"
-#include "DiscreteChapter2.h"
+#include "DSChapter3.h"
 
 using namespace std;
 
 
+
+
+
 int main(){
-	DiscreteChapter2 cp;
+	ds::DSChapter3 d;
+	d.listLink();
 
-	int a[10] = {1,3,5};
-	int b[10] = {};
-
-
-} 
+}

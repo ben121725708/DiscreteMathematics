@@ -21,3 +21,26 @@ void  DiscreteChapter3::count7BitCombo() {
 		std::cout << std::endl;
 	}
 }
+
+
+void DiscreteChapter3::multipleRule() {
+	int person[2] = {101,202};
+	int rooms[12] = {1,2,3,4,5,6,7,8,9,10,11,12};
+
+	int i, k;
+	int count = 0;
+	for (i = 0; i < 12;i++) {
+		for (k = 0; k < 12;k++) {
+			if (k != i) {
+				//std::cout << person[0] << " room:" << rooms[i] << std::endl;
+				std::cout << person[1] << " romm:" << rooms[k] << " ";
+				count++;
+			}
+		}
+		std::cout << std::endl;
+	}
+	std::cout << count << std::endl;
+
+
+
+}

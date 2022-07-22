@@ -77,6 +77,17 @@ public:
 	void identitySets();
 
 
+	/*
+		ÇóºÍ
+	*/
+	void summation();
+
+	/*
+		¾ØÕóÔËËã
+	*/
+	void matrix();
+
+
 private:
 
 };

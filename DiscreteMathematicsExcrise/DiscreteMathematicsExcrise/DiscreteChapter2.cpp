@@ -285,3 +285,280 @@ void DiscreteChapter2::identitySets() {
 
 
 }
+
+
+void DiscreteChapter2::summation() {
+
+	double sum = 0;
+	for (double v = 1; v <= 100;v++) {
+		sum += (1 / v);
+	}
+	std::cout << "求和公式 j = 1  上限100  值:" << sum << std::endl;
+
+
+	double a = 1.8, r = 0.99;
+
+	//求和公式
+	/*
+		k = 0  到 n
+		ar^k	r != 0
+		ar^n + 1 - a / r - 1	r != 1
+	*/
+	sum = (a * pow(r,100 + 1) - a) / (r - 1);
+	
+	std::cout << "求和公式一 ：" <<sum << std::endl;
+
+	/*
+		k = 1  到 n
+		n(n + 1) / 2
+	*/
+	sum = (100 * (100 + 1)) / 2;
+	std::cout << "求和公式二 ：" << sum << std::endl;
+
+
+	/*
+		k = 1  到 n
+		k^2
+		n(n + 1)(2n + 1) / 6
+	*/
+	sum = (50 * (50 + 1) * (2 * 50 + 1)) / 6;
+	std::cout << "求和公式三 ：" << sum << std::endl;
+
+
+
+	/*
+		k = 1  到 n
+		k^3
+		n^2(n + 1)^2 / 4
+	*/
+	sum = (20 * 20 * (20 + 1)*(20 + 1)) / 4;
+	std::cout << "求和公式四 ：" << sum << std::endl;
+
+}
+
+
+void DiscreteChapter2::matrix() {
+	int i, j, k;
+	/*
+		矩阵加法
+		大小不同的矩阵不能相加
+	*/
+	int matrix1[3][3] = {
+		{1,0,1},
+		{2,2,3},
+		{3,4,0}
+	};
+
+	int matrix2[3][3] = {
+		{3,4,-1},
+		{1,-2,8},
+		{-1,1,3}
+	};
+
+	int matrixTmp[3][3] = {};
+
+
+	for (i = 0; i < 3;i++) {
+		for (j = 0; j < 3;j++) {
+			matrixTmp[i][j] = matrix1[i][j] + matrix2[i][j];
+		}
+	}
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			std::cout << matrixTmp[i][j] << " ";
+		}
+		std::cout << std::endl;
+	}
+
+	std::cout << std::endl;
+
+	/*
+		矩阵乘积
+	*/
+	int matrix3[4][3] = { {1,0,4},{2,1,1},{3,1,0},{0,2,2} };
+	int matrix4[3][2] = { {2,4},{1,1},{3,0} };
+	int matrixTmp2[4][2] = {};
+
+	int sum = 0;
+	for (i = 0; i < 4;i++) {
+		for (k = 0; k < 2;k++) {
+			for (j = 0; j < 3;j++) {
+				sum += (matrix3[i][j] * matrix4[j][k]);
+			}
+			matrixTmp2[i][k] = sum;
+			sum = 0;
+		}
+	}
+
+	for (int i = 0; i < 4; i++) {
+		for (int j = 0; j < 2; j++) {
+			std::cout << matrixTmp2[i][j] << " ";
+		}
+		std::cout << std::endl;
+	}
+
+	std::cout << std::endl;
+
+
+	/*
+		n阶单位矩阵
+		克罗内克积
+		如果i = j 则(i,j) = 1
+			i != j 则(i,j) = 0
+	*/
+	int identityMatrix[20][20] = {};
+	for (i = 0; i < 20;i++) {
+		for (j = 0; j < 20;j++) {
+			identityMatrix[i][j] = (i == j ? 1 : 0);
+		}
+	}
+
+	/*for (int i = 0; i < 20; i++) {
+		for (int j = 0; j < 20; j++) {
+			std::cout << identityMatrix[i][j] << " ";
+		}
+		std::cout << std::endl;
+	}
+
+	std::cout << std::endl;*/
+
+
+	/*
+		矩阵转置
+	*/
+	int transMatrix[2][3] = { {1,2,3},{4,5,6} };
+	int transMatrix1[3][2] = {};
+
+	for (i = 0; i < 2;i++) {
+		for (j = 0; j < 3;j++) {
+			transMatrix1[j][i] = transMatrix[i][j];
+		}
+	}
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 2; j++) {
+			std::cout << transMatrix1[i][j] << " ";
+		}
+		std::cout << std::endl;
+	}
+
+	std::cout << std::endl;
+
+	/*
+		对称的方阵
+		矩阵A的转置与自身相等
+
+		矩阵是对称的，当且仅当它是方阵且相对于主对角线是对称的
+	*/
+	//对称的方阵
+	int symmetricMatrix[3][3] = { 
+		{1,1,0},
+		{1,0,1},
+		{0,1,0}
+	};
+	int symmetricTmp[3][3] = {};
+	for (i = 0; i < 3; i++) {
+		for (j = 0; j < 3; j++) {
+			symmetricTmp[j][i] = symmetricMatrix[i][j];
+		}
+	}
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			std::cout << symmetricTmp[i][j] << " ";
+		}
+		std::cout << std::endl;
+	}
+
+	std::cout << std::endl;
+
+
+	/*
+		0-1矩阵
+		所有元素非0即1
+		经常用来表示各种离散结构
+	*/
+	int ozMatrix1[2][3] = {
+		{1,0,1},
+		{0,1,0}
+	};
+	int ozMatrix2[2][3] = {
+		{0,1,0},
+		{1,1,0}
+	};
+
+	int ozMatrixTmp[2][3] = {};
+
+	//0-1矩阵的并
+	for (i = 0; i < 2;i++) {
+		for (j = 0; j < 3;j++) {
+			ozMatrixTmp[i][j] = (ozMatrix1[i][j] | ozMatrix2[i][j]);
+		}
+	}
+
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 3; j++) {
+			std::cout << ozMatrixTmp[i][j] << " ";
+		}
+		std::cout << std::endl;
+	}
+
+	std::cout << std::endl;
+
+	//0-1矩阵的交
+	for (i = 0; i < 2; i++) {
+		for (j = 0; j < 3; j++) {
+			ozMatrixTmp[i][j] = (ozMatrix1[i][j] & ozMatrix2[i][j]);
+		}
+	}
+
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 3; j++) {
+			std::cout << ozMatrixTmp[i][j] << " ";
+		}
+		std::cout << std::endl;
+	}
+
+	std::cout << std::endl;
+
+	/*
+		0-1矩阵布尔积
+		A O B
+		类似普通矩阵的乘积
+		用 | 代替加法
+		用 & 代替乘法
+	*/
+	int boolMatrix1[3][2] = {
+		{1,0},
+		{0,1},
+		{1,0}
+	};
+	int boolMatrix2[2][3] = {
+		{1,1,0},
+		{0,1,1}
+	};
+
+	sum = 0;
+	int boolMatrixTmp[3][3] = {};
+	for (i = 0; i < 3;i++) {
+		for (j = 0; j < 3;j++) {
+			for (k = 0; k < 2;k++) {
+				sum |= boolMatrix1[i][k] & boolMatrix2[k][j];
+			}
+			boolMatrixTmp[i][j] = sum;
+			sum = 0;
+		}
+	}
+	
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			std::cout << boolMatrixTmp[i][j] << " ";
+		}
+		std::cout << std::endl;
+	}
+
+	std::cout << std::endl;
+
+
+}

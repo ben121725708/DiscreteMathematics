@@ -13,6 +13,12 @@ public:
 	分别是整数  0 -- 127  共128个不同组合
     */
 	void count7BitCombo();
+
+	/*
+		乘积法则
+	*/
+	void multipleRule();
+
 private:
 	//bit数
 	const static unsigned short M_N_BIT_COUNTS = 7;

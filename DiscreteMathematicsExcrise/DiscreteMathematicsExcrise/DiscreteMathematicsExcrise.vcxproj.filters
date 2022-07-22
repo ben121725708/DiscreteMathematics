@@ -33,6 +33,12 @@
     <ClCompile Include="ArrayUtils.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="MoreEffective.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DSChapter3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DiscreteChapter1.h">
@@ -48,6 +54,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="ArrayUtils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MoreEffective.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DSChapter3.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -95,6 +95,8 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <StackReserveSize>10000000</StackReserveSize>
+      <StackCommitSize>10000000</StackCommitSize>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -157,6 +159,8 @@
     <ClCompile Include="DiscreteChapter2.cpp" />
     <ClCompile Include="DiscreteChapter3.cpp" />
     <ClCompile Include="DiscreteMathematicsExcrise.cpp" />
+    <ClCompile Include="DSChapter3.cpp" />
+    <ClCompile Include="MoreEffective.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayUtils.h" />
@@ -164,6 +168,8 @@
     <ClInclude Include="DiscreteChapter1.h" />
     <ClInclude Include="DiscreteChapter2.h" />
     <ClInclude Include="DiscreteChapter3.h" />
+    <ClInclude Include="DSChapter3.h" />
+    <ClInclude Include="MoreEffective.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

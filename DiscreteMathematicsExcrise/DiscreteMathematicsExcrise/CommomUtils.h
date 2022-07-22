@@ -13,7 +13,7 @@ public:
 	//分解一个数字的二进制到数组中
 	void generateBinaryBits(int *ary,int target);
 
-	//输出一个数组的所有值
+	//输出一个一维数组的所有值
 	void printArrayValues(int *ary,int n);
 
 	//置空一个数组的所有值
