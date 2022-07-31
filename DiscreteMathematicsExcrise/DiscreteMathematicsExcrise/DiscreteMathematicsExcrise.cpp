@@ -5,16 +5,16 @@
 #include <string>
 #include "CommomUtils.h"
 #include "ArrayUtils.h"
-#include "DSChapter3.h"
+#include "CommomUtils.h"
+#include "DSChapter4.h"
+#include "MoreEffective.h"
+
 
 using namespace std;
 
 
 
-
-
 int main(){
-	ds::DSChapter3 d;
-	d.listLink();
-
+	MoreEffective me;
+	me.newDelete();
 }

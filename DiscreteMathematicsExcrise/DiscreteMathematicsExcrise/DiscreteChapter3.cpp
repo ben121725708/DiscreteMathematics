@@ -41,6 +41,27 @@ void DiscreteChapter3::multipleRule() {
 	}
 	std::cout << count << std::endl;
 
+}
 
+
+unsigned int DiscreteChapter3::arrangement(int n, int r) {
+	int tmp = 1;
+	for (int i = 1; i <= n;i++) {
+		tmp *= i;
+	}
+
+
+	return 0;
+}
+
+
+void DiscreteChapter3::binomial() {
+
+}
+
+
+void DiscreteChapter3::combo() {
+	//第一个r组合	{1,2,3,...,r - 1,r}
+	//最后有一个r组合 {n-r - 1,n - r - 2,...,n-1,n}
 
 }

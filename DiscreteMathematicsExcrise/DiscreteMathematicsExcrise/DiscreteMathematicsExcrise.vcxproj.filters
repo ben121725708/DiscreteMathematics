@@ -39,6 +39,12 @@
     <ClCompile Include="DSChapter3.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DSChapter4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DiscreteChapter1.h">
@@ -60,6 +66,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="DSChapter3.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DSChapter4.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="test.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

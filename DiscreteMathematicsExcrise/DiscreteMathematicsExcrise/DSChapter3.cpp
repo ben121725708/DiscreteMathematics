@@ -1,4 +1,5 @@
 #include <iostream>
+#include "CommomUtils.h"
 #include "DSChapter3.h"
 
 namespace ds {
@@ -146,5 +147,43 @@ namespace ds {
 
 	}
 
+	void DSChapter3::stack() {
+		//栈元素数量
+		unsigned int size = 0;
+		//当前栈的数据位置
+		unsigned int index = 0;
+		//使用数组实现栈容器
+		int stack[256] = {};
+
+		int i;
+
+		//存入3个数据到栈中
+		for (i = 0; i < 3;i++) {
+			size++;
+			stack[index++] = i * 2;
+		}
+
+		CommomUtils::getInstance().printArrayValues(stack, size);
+
+		//出栈
+		if (stack[index - 1]) {
+			index--;
+			size--;
+		}
+
+		CommomUtils::getInstance().printArrayValues(stack, size);
+
+		//入栈
+		stack[index++] = 88;
+		size++;
+		CommomUtils::getInstance().printArrayValues(stack, size);
+
+		//链表实现	每次都在表头插入新元素
+
+
+
+	}
 
 }
+
+

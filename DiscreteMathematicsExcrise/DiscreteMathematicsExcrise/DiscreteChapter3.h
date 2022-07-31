@@ -19,6 +19,24 @@ public:
 	*/
 	void multipleRule();
 
+	/*
+		排列公式
+		P(n,r) = n!/(n - r)!
+	*/
+	unsigned int arrangement(int n,int r);
+
+	/*
+		二项式定理
+		设x和y是变量，n是非负整数
+		(x + y)^n = E(求和符号) [j = 0  n]	x^n - j * y^j
+	*/
+	void binomial();
+
+	/*
+		生成组合
+	*/
+	void combo();
+
 private:
 	//bit数
 	const static unsigned short M_N_BIT_COUNTS = 7;

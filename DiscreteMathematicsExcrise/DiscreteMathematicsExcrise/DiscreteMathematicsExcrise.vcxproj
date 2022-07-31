@@ -160,7 +160,9 @@
     <ClCompile Include="DiscreteChapter3.cpp" />
     <ClCompile Include="DiscreteMathematicsExcrise.cpp" />
     <ClCompile Include="DSChapter3.cpp" />
+    <ClCompile Include="DSChapter4.cpp" />
     <ClCompile Include="MoreEffective.cpp" />
+    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayUtils.h" />
@@ -169,7 +171,9 @@
     <ClInclude Include="DiscreteChapter2.h" />
     <ClInclude Include="DiscreteChapter3.h" />
     <ClInclude Include="DSChapter3.h" />
+    <ClInclude Include="DSChapter4.h" />
     <ClInclude Include="MoreEffective.h" />
+    <ClInclude Include="test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

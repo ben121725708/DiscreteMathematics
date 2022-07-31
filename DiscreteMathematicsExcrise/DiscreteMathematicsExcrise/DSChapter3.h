@@ -45,6 +45,13 @@ namespace ds {
 		*/
 		void listLink();
 
+		/*
+			栈ADT
+			模拟一个简单的栈模型
+		*/
+		void stack();
+
+
 
 	private:
 
